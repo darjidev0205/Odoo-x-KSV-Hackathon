@@ -193,7 +193,7 @@ Follow these steps to run VendorBridge locally in a development environment:
 
 ---
 
-### Step 1: Clone the Repository & Start Databases
+### Clone the Repository & Start Databases
 Spin up isolated PostgreSQL and Redis databases using Docker:
 ```bash
 # Navigate to the backend directory
@@ -205,22 +205,7 @@ npm run docker:up
 
 ---
 
-### Step 2: Configure Environment Variables
-Create a `.env` file in the `backend/` directory:
-```env
-NODE_ENV=development
-PORT=5000
-DATABASE_URL=postgresql://vendorbridge:vendorbridge_secret@127.0.0.1:5433/vendorbridge_db?schema=public
-REDIS_HOST=localhost
-REDIS_PORT=6380
-JWT_ACCESS_SECRET=super-secret-access-token-key-change-in-production
-BCRYPT_SALT_ROUNDS=12
-CORS_ORIGIN=http://localhost:3000
-```
-
----
-
-### Step 3: Run Migrations & Seed the Database
+###  Run Migrations & Seed the Database
 Deploy database schemas and seed default roles, permissions, categories, and test users:
 ```bash
 # Install backend dependencies
@@ -352,7 +337,7 @@ For a comprehensive review of the design, complete feature scope, business model
 ## 👥 Development Team
 
 * **Krishna Prajapati** — Full Stack Software Engineer
-* **Harshil Darji** — Full Stack Software Engineer
+* **Dev Darji** — Full Stack Software Engineer,Data Scientist 
 
 ---
 
